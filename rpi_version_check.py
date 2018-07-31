@@ -69,7 +69,7 @@ except ImportError:
 print('Checking for pickle')
 try:
     import pickle
-    print('---> Correct!, version: {}'.format(pickle.__version__))
+    print('---> Correct!')
 except ImportError:
     print('---> Error!')
     print("you should install pickle before continuing")
