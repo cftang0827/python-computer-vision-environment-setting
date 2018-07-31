@@ -65,15 +65,6 @@ except ImportError:
     exit()
 
 
-print('Checking for reload')
-try:
-    from imp import reload
-    print('---> Correct!, version: {}'.format(reload.__version__))
-except ImportError:
-    print('---> Error!')
-    print("you should install reload before continuing")
-    exit()
-
 
 print('Checking for pickle')
 try:
