@@ -92,15 +92,13 @@ except ImportError:
     exit()
 
 
-print('Checking for Pytorch')
+print('Checking for keras')
 try:
-    import torch
-    import torch.nn.init as init
-    from torch.autograd import Variable
+    import keras
     print('---> Correct!')
 except ImportError:
     print('---> Error!')
-    print("you should install platform before continuing")
+    print("you should install keras before continuing")
     exit()
 
 print('Checking for face_recognition')
@@ -114,13 +112,13 @@ except ImportError:
 
 
 
-print('Checking for imageio')
+print('Checking for tensorflow')
 try:
-    import imageio as im
+    import tensorflow as tf
     print('---> Correct!')
 except ImportError:
     print('---> Error!')
-    print("you should install imageio before continuing")
+    print("you should install tensorflow before continuing")
     exit()
 
 print('Checking for sklearn')

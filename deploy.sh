@@ -31,24 +31,25 @@ sudo rm -r mini*
 sudo rm Mini*
 
 
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget https://repo.continuum.io/miniconda/Miniconda3-4.5.1-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 bash ./Miniconda3-latest-Linux-x86_64.sh -b -p "$HOME/miniconda3"
 printf '%s\n' 'export PATH="'$HOME'/miniconda3/bin:$PATH"' >> $HOME/.bashrc
 export PATH="$HOME/miniconda3/bin:$PATH"
 
 printf '================ Install Python lib ================\n'
-conda update -n base conda -y
+#conda update -n base conda -y
 pip install --upgrade pip
 pip install --user wget 
 pip install --user  numpy scipy scikit-image scikit-learn redis pymysql flask imageio h5py keras tornado tensorflow slacker setuptools pillow
 pip install --user boto3 requests
 pip install --user logmatic-python
 conda install ipython -y
-conda install -c menpo opencv -y
+conda install -c conda-forge opencv -y
+# conda install -c menpo opencv -y
 conda install mkl -y
-pip install --user colorama 
-conda install pytorch-cpu torchvision -c pytorch -y
+# pip install --user colorama 
+# conda install pytorch-cpu torchvision -c pytorch -y
 
 
 # build dlib from source 
