@@ -10,6 +10,7 @@ sudo apt-get install cmake -y
 sudo apt-get install libhdf5-serial-dev -y
 sudo apt-get install libhdf5-dev -y
 sudo apt-get install -y libqtgui4
+sudo apt install libqt4-test -y
 
 
 sudo apt-get install default-jdk ant -y
