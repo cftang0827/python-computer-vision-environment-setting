@@ -28,6 +28,7 @@ sudo python3 get-pip.py
 
 
 sudo pip3 install numpy ipython -i https://www.piwheels.org/simple
+sudo pip3 install scikit-learn -i https://www.piwheels.org/simple 
 sudo pip3 install scipy dlib face_recognition -i https://www.piwheels.org/simple
 
 sudo pip3 install opencv-python -i https://www.piwheels.org/simple
