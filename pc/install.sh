@@ -5,23 +5,10 @@ sudo rm /var/lib/apt/lists/lock
 sudo rm /var/lib/dpkg/lock
 sudo rm /var/lib/apt/lists/lock
 sudo rm /var/cache/apt/archives/lock
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
-sudo apt-get install -f 
-sudo apt-get install build-essential gcc g++ -y
-sudo apt-get install build-essential cmake -y
-sudo apt-get install libgtk-3-dev -y
-sudo apt-get install libboost-all-dev -y
 sudo apt-get install build-essential cmake pkg-config -y
-sudo apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev -y
-sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev -y
-sudo apt-get install libxvidcore-dev libx264-dev -y
-sudo apt-get install libatlas-base-dev gfortran -y
-sudo apt-get install libopenblas-dev -y 
-sudo apt-get install liblapack3
-sudo apt-get install git -y
-sudo apt-get install gcc-4.9 -y
-sudo apt-get upgrade libstdc++6 -y
+sudo apt-get install libsm-dev libxrender1 libxext-dev libgif-dev -y
+sudo apt-get install git wget -y
 
 
 # miniconda
@@ -39,15 +26,9 @@ export PATH="$HOME/miniconda3/bin:$PATH"
 printf '================ Install Python lib ================\n'
 #conda update -n base conda -y
 pip install --upgrade pip
-pip install --user wget 
-pip install --user  numpy scipy scikit-image scikit-learn redis pymysql flask imageio h5py keras tornado tensorflow slacker setuptools pillow
-pip install --user boto3 requests
-pip install --user logmatic-python
-pip install --user opencv-python
+pip install --user opencv-python boto3 requests wget numpy scipy scikit-image scikit-learn redis pymysql flask imageio h5py keras tornado tensorflow slacker setuptools pillow
 conda install ipython -y
-conda install mkl -y
-# pip install --user colorama 
-# conda install pytorch-cpu torchvision -c pytorch -y
+conda install mkl intel-openmp --no-deps -y
 
 
 # build dlib from source 

@@ -7,8 +7,8 @@ if sys.version_info[0] >= 3:
     print('Environment = Python 3 ---> Correct!')
 else:
     try:
-        print ('Environment = Python 2 ---> Incorrect!')
-        print ('Environment testing fail, stop! ')
+        print('Environment = Python 2 ---> Incorrect!')
+        print('Environment testing fail, stop! ')
         exit()
     except:
         os.system('echo python2 error')
@@ -17,7 +17,6 @@ else:
 if platform.system() != 'Linux':
     print('It is not Linux based system ---> Error')
     exit()
-
 
 print()
 
@@ -41,7 +40,6 @@ except ImportError:
     print("you should install dlib before continuing")
     exit()
 
-
 print('Checking for opencv')
 try:
     import cv2 as c
@@ -50,10 +48,6 @@ except ImportError:
     print('---> Error!')
     print("you should install opencv before continuing")
     exit()
-
-
-
-
 
 print('Checking for platform')
 try:
@@ -64,8 +58,6 @@ except ImportError:
     print("you should install platform before continuing")
     exit()
 
-
-
 print('Checking for pickle')
 try:
     import pickle
@@ -75,7 +67,6 @@ except ImportError:
     print("you should install pickle before continuing")
     exit()
 
-
 print('Checking for face_recognition')
 try:
     import face_recognition as fr
@@ -84,8 +75,6 @@ except ImportError:
     print('---> Error!')
     print("you should install face_recognition before continuing")
     exit()
-
-
 
 print('Checking for tensorflow')
 try:
@@ -104,7 +93,6 @@ except ImportError:
     print('---> Error!')
     print("you should install imageio before continuing")
     exit()
-
 
 print()
 print()
