@@ -5,13 +5,14 @@ The one-click installation bash script to install Miniconda, dlib, face_recognit
 And a verification script to check whether the environment is well installed. 
 
 ```
-bash deploy.sh
+cd pc
+bash install.sh
 ```
 
 and after the installation, you may want to check environment
 
 ```
-python startup.py
+python test.py
 ```
 
 If you face the problem that cannot import package correctly, you can check your ~/.bashrc
